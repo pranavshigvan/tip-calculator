@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css">
+ 
+</head>
+<body>
+    <div class="container">
+        <img id="logo" src="images/logo.svg" alt="logo" srcset="">
+        <div id="card">
+            <div id="info">
+                <label for="bill">bill</label>
+                <input id="bills" type="number" placeholder="0">
+                <label for="tip">Select Tip %</label>
+                <div id="tips-option">
+                  <label for="five">5 %<input type="radio" name="tip" id="five" value="5"></label>
+                  <label for="ten">10 %<input type="radio" name="tip" id="ten" value="10"></label>
+                  <label for="fifteen">15 %<input type="radio" name="tip" id="fifteen" value="15"></label>
+                  <label for="twenty-five">25 %<input type="radio" name="tip" id="twenty-five" value="25"></label>
+                  <label for="fifty">50 %<input type="radio" name="tip" id="fifty" value="50"></label>
+                  <input type="number"  id="custom-tip" placeholder="Custom">
+                </div>
+                <label for="persons">Number of People</label>
+                <input type="number" name="" id="persons">
+            </div>
+            <div id="calculated-tip">
+                <div>
+                  <h4>Tip Amount <span>/ person</span></hh4>
+                  <h2 >$<span id="tip">0.00</span></h2>
+                </div>
+                <div>
+                  <h4>Total <span>/ person</span></h4>
+                  <h2 >$<span id="total">0.00</span></h2>
+                </div>
+                <button id="calculate">CALCULATE</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

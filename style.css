@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+    position: relative;
+}
+.container {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#logo {
+    margin: 1.5rem auto 2rem;
+}
+#card {
+    
+    max-width: 800px;
+    min-width: 600px;
+    
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    background-color: white;
+    display: flex;
+    box-shadow: 2px 2px 15px hsl(184, 14%, 56%);
+}
+#info ,#calculated-tip {
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+}
+#calculated-tip {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    position: relative;
+    min-height: 250px;
+}
+input[type="number"]:not(#custom-tip) {
+    width: 100%;
+    padding: 4px;
+    border-radius: 3px;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    text-align: right;
+    margin-bottom: 15px;
+
+}
+input[type="number"]:active {
+    border: none ;
+}
+#tips-option input:not(#custom-tip) {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+#tips-option label,#custom-tip {
+    display: inline-block;
+    width: 30%;
+    padding: 6px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 5px auto;
+}
+#tips-option label {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+}
+
+#calculated-tip > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+h4 span {
+    display: block;
+    font-size: 16px;
+    opacity: 0.7;
+
+}
+button {
+    width: 90%;
+    padding:8px;
+    color: hsl(183, 100%, 15%) ;
+    background-color:  #26c2ad;
+    font-weight: 900;
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.clicked {
+    background-color: hsl(186, 14%, 43%);
+    color: hsl(183, 100%, 15%);
+}
+.alert {
+    border: 1px solid red;
+}
+@media (max-width:600px) {
+    #info ,#calculated-tip {
+        width: 100%;
+    }
+    #card {
+        display: block;
+        width: 100%;
+        min-width: 350px;
+        margin: 0 auto;
+    }
+}
